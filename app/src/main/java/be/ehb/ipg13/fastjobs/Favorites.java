@@ -138,6 +138,23 @@ public class Favorites extends Fragment {
             if (position % 2 == 0) {
                 view.setBackgroundColor(Color.LTGRAY);
             }
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+
+                    Intent apply = new Intent(getContext(),solliciteren.class);
+                    String url = "http://vdabservices-cbt.vdab.be/vacaturedetail/1.0.0/"+modelTest.getId();
+                    apply.putExtra(TAG_URL, url);
+                    apply.putExtra(TAG_NAME, modelTest.getTitel());
+                    //System.out.println("position:  " + position +"Vacature id :"+ modelTest.getId());
+                    // startActivity(apply);
+                    // String url = "http://vdabservices-cbt.vdab.be/vacaturedetail/1.0.0/"+ modelTest.getId();
+                    // System.out.println(url);
+                    startActivity(apply);
+
+                }
+            });
 
             return view;
         }

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget41"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:scrollbars="vertical"
+    android:baselineAligned="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/functienaam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DADADC" ></View>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bedrijfinfo"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Vacature-informatie"
+            android:id="@+id/vacature"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="75dp"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:fontFamily="@string/abc_action_mode_done"
+
+            android:textAlignment="center" />
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ff404040" ></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="30sp"
+                android:layout_width="80sp"
+                android:text="Type :"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/typeJob"/>
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vacinfo"
+                android:textSize="15dp"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="@+id/typeJob"
+                android:layout_toEndOf="@+id/typeJob"
+                android:layout_alignParentTop="true" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="30sp"
+                android:layout_width="80sp"
+                android:text="Ervaring :"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/jobErvaring"/>
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jobErvaringView"
+                android:textSize="16dp"
+                android:textColor="#ff000000"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/jobErvaring" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="30sp"
+                android:layout_width="80sp"
+                android:text="Opleiding :"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/jobOpleiding"/>
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/opleidingView"
+                android:textSize="16dp"
+                android:textColor="#ff000000"
+                android:layout_toEndOf="@+id/jobOpleiding" />
+
+
+        </RelativeLayout>
+
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DADADC" ></View>
+
+
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DADADC" ></View>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_height="30sp"
+                android:layout_width="150sp"
+                android:text="Job Omschrijving :"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/descriptionlbl"
+                android:layout_alignParentTop="true" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="362sp"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="20sp"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/descriptionlbl"
+            android:elegantTextHeight="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:layout_height="30sp"
+            android:layout_width="80sp"
+            android:text="Profiel :"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/profielTitle"/>
+
+
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="20sp"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DADADC" ></View>
+
+        <TextView
+            android:id="@+id/contactEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="20sp"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DADADC" ></View>
+
+        <TextView
+            android:id="@+id/contacTel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="20sp"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DADADC" ></View>
+
+        <TextView
+            android:id="@+id/contactWeb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="20sp"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:linksClickable="true"/>
+        <!--  divider -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DADADC" ></View>
+        <Button
+            android:id="@+id/btnsolliciteren"
+            android:layout_width="146sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff2a8171"
+            android:text="btnsolliciteren"
+            android:onClick="solliciteren"
+
+            />
+
+    </LinearLayout>
+</ScrollView>

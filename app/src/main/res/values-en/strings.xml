@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FastJobs</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Job zoeken</string>
+    <string name="title_section3">Job aanrader</string>
+    <string name="title_section4">Favoriete vacatures</string>
+    <string name="title_section5">Afspraken</string>
+    <string name="title_section6">Tips</string>
+    <string name="title_section7">profiel wijzigen</string>
+    <string name="title_activity_splash_screen">Splashscreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_aboutUs">About Us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutUs">Dit is een applicatie voor integration project 2 gemaakt door studenten aan de Erasmushogeschool Brussel</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_profiel_aanmaken_basis_gegevens">profiel_aanmaken_basis_gegevens</string>
+    <string name="title_activity_profiel_aanmaken_ervaring">profiel_aanmaken_ervaring</string>
+    <string name="title_activity_profiel_aanmaken_jobvoorkeuren">profiel_aanmaken_jobvoorkeuren</string>
+    <string name="title_activity_profiel_aanmaken_jobvoorkeuren_trefwoorden">        profiel_aanmaken_jobvoorkeuren_trefwoorden</string>
+    <string name="title_activity_profiel_aanmaken_vaardigheid">profiel_aanmaken_vaardigheid</string>
+    <string name="title_activity_profiel_aanmaken_opleiding">profiel_aanmaken_opleiding</string>
+    <string name="Volgende">Volgende</string>
+    <string name="title_activity_wijzig_jobvoorkeuren">wijzig_jobvoorkeuren</string>
+    <string name="title_activity_wijzig_jobvoorkeuren_trefwoorden">wijzig_jobvoorkeuren_trefwoorden</string>
+    <string name="title_activity_profielen_bekijken">profielen_bekijken</string>
+    <string name="title_activity_tip_detail">TipDetail</string>
+    <string name="title_activity_uitgebreid_zoeken">Uitgebreid_zoeken</string>
+    <string name="title_activity_uitgebreid_zoeken_resultaten">Uitgebreid_zoeken_resultaten</string>
+    <string name="title_activity_solliciteren">solliciteren</string>
+    <string name="title_activity_solliciteren2">solliciteren2</string>
+    <string name="title_activity_google__maps">Map</string>
+    <string name="WelkomeText">Welkom To fast jobs</string>
+    <string name="HomeScreenLine1">Welkom gebruiker maak een nieuw profiel aan voor meer en betere zoek resultaten of kijk welke  vacature\'s er zijn voor je huidige profiel!</string>
+    <string name="HomeText2">We hebben ook nog handige tips voor je sollicitatie geprek onder tips!</string>
+
+</resources>

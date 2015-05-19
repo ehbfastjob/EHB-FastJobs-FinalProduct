@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="be.ehb.ipg13.fastjobs.Suggestions">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spnrProfielen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff2a8171"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Er is geen internet"
+        android:id="@+id/lbl_internet"
+        android:layout_below="@+id/spnrProfielen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.ehb.ipg13.fastjobs" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="FastJobs" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Volgens mij is dit fout .MainActivity moet .Home zijn ? -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.homescreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profiel_aanmaken_basis_gegevens"
+            android:label="@string/title_activity_profiel_aanmaken_basis_gegevens" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.basis_gegevens" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profiel_aanmaken_ervaring"
+            android:label="@string/title_activity_profiel_aanmaken_ervaring" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.ervaring" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profiel_aanmaken_jobvoorkeuren"
+            android:label="@string/title_activity_profiel_aanmaken_jobvoorkeuren" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.jobvoorkeur" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profiel_aanmaken_jobvoorkeuren_trefwoorden"
+            android:label="@string/title_activity_profiel_aanmaken_jobvoorkeuren_trefwoorden" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.trefwoorden" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profiel_aanmaken_vaardigheid"
+            android:label="@string/title_activity_profiel_aanmaken_vaardigheid" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.vaardigheden" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profiel_aanmaken_opleiding"
+            android:label="@string/title_activity_profiel_aanmaken_opleiding" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.opleidingen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".NotService" />
+
+        <activity
+            android:name=".wijzig_jobvoorkeuren"
+            android:label="@string/title_activity_wijzig_jobvoorkeuren" >
+        </activity>
+        <activity
+            android:name=".wijzig_jobvoorkeuren_trefwoorden"
+            android:label="@string/title_activity_wijzig_jobvoorkeuren_trefwoorden" >
+        </activity>
+        <activity
+            android:name=".profielen_bekijken"
+            android:label="@string/title_activity_profielen_bekijken" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.proBekijken" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TipDetail"
+            android:label="@string/title_activity_tip_detail" >
+            <intent-filter>
+                <action android:name="be.ehb.ipg13.fastjobs.tipdetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Uitgebreid_zoeken"
+            android:label="@string/title_activity_uitgebreid_zoeken" >
+        </activity>
+        <activity
+            android:name=".Uitgebreid_zoeken_resultaten"
+            android:label="@string/title_activity_uitgebreid_zoeken_resultaten" >
+        </activity>
+        <activity
+            android:name=".solliciteren"
+            android:label="@string/title_activity_solliciteren" >
+        </activity>
+        <activity
+            android:name=".solliciteren2"
+            android:label="@string/title_activity_solliciteren2" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".google_MapsActivity"
+            android:label="@string/title_activity_google__maps" >
+        </activity>
+    </application>
+
+</manifest>
